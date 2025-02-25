@@ -22,16 +22,22 @@ export const translations: TranslationDictionary = {
     zh: '价值观',
   },
   valuesDescription: {
-    ko: '우리는\n격동과 변혁의 시대\n한가운데에 서 있습니다.',
-    en: 'We stand\nin the midst of an era\nof turbulence and transformation.',
-    ja: '私たちは\n激動と変革の時代の\n真っ只中にいます。',
-    zh: '我们正处于\n变革与动荡时代的\n中心。',
+    ko: 'AI와 청년,\n그리고 스포츠\n미래를 움직이는 힘',
+    en: 'AI and Youth,\nand Sports\nPower to Move the Future',
+    ja: 'AIと青年、\nそしてスポーツ\n未来を動かす力',
+    zh: 'AI与青年，\n以及体育\n推动未来的力量',
   },
   history: {
-    ko: '연혁',
-    en: 'History',
-    ja: '経歴',
-    zh: '历史',
+    ko: '인증 및 자격',
+    en: 'Certifications',
+    ja: '資格',
+    zh: '资格',
+  },
+  sectionTitle: {
+    ko: '인증 및 자격',
+    en: 'Certifications',
+    ja: '認定及び資格',
+    zh: '认证及资格',
   },
   activities: {
     ko: '프로젝트',
@@ -40,16 +46,16 @@ export const translations: TranslationDictionary = {
     zh: '项目',
   },
   name: {
-    ko: '정이노',
-    en: 'Jeong Inno',
-    ja: 'イノ',
-    zh: 'Jeong Inno',
+    ko: '최석재',
+    en: 'Seokjae Choi',
+    ja: '崔碩宰',
+    zh: '崔碩宰',
   },
   title: {
-    ko: '이노카드 템플릿 · 기업인',
-    en: 'InnoCard Template · Entrepreneur',
-    ja: 'イノカードテンプレート · 企業家',
-    zh: 'InnoCard模板·企业家',
+    ko: '체육회 이사|사단법인 사무국장|AI Agent',
+    en: 'Director of the Sports Council|Secretary-General of the Association|AI Agent',
+    ja: '体育会ディレクター|社団法人事務局長|AIエージェント',
+    zh: '体育会理事|社团法人事务局长|AI代理',
   },
   birth: {
     ko: '출생',
@@ -58,10 +64,10 @@ export const translations: TranslationDictionary = {
     zh: '出生',
   },
   birthDate: {
-    ko: '2006년 1월 1일',
-    en: 'January 1, 2006',
-    ja: '2006年1月1日',
-    zh: '2006年1月1日',
+    ko: '1999년 9월 27일',
+    en: 'Sep 27, 1999',
+    ja: '1999年9月27日',
+    zh: '1999年9月27日',
   },
   affiliation: {
     ko: '소속',
@@ -70,22 +76,22 @@ export const translations: TranslationDictionary = {
     zh: '隶属',
   },
   affiliationDescription: {
-    ko: '이노카드 템플릿',
-    en: 'InnoCard Template',
-    ja: 'イノカードテンプレート',
-    zh: 'InnoCard模板',
+    ko: '대전광역시 서구체육회 이사\n(사)대한청년을세계로 사무국장\n이노커브 AI Agent',
+    en: 'Director of the Sports Council\nSecretary-General of the Association\nInnoCurve AI Agent',
+    ja: '体育会ディレクター\n社団法人事務局長\nイノカーブ AIエージェント',
+    zh: '体育会理事\n社团法人事务局长\nInnoCurve AI代理',
   },
   education: {
-    ko: '학력',
-    en: 'Education',
-    ja: '学歴',
-    zh: '教育',
+    ko: '전공',
+    en: 'Major',
+    ja: '専攻',
+    zh: '专业',
   },
   educationDescription: {
-    ko: '한국대학교 컴퓨터공학과 학사',
-    en: "Korea University, Bachelor of Computer Science",
-    ja: '韓国大学 コンピュータサイエンス学部 学士',
-    zh: '韩国大学 计算机科学与工程学院 学士',
+    ko: '레저스포츠학, 스포츠마케팅학',
+    en: 'Leisure Sports, Sports Marketing',
+    ja: 'レクリエーションスポーツ, スポーツマーケティング',
+    zh: '休闲体育, 体育营销',
   },
   field: {
     ko: '분야',
@@ -94,10 +100,10 @@ export const translations: TranslationDictionary = {
     zh: '领域',
   },
   fieldDescription: {
-    ko: 'AI, 마케팅, 커뮤니케이션',
-    en: 'AI, Marketing, Communication',
-    ja: 'AI、マーケティング、コミュニケーション',
-    zh: 'AI，营销，沟通',
+    ko: 'AI, 청년, 스포츠',
+    en: 'AI, Youth, Sports',
+    ja: 'AI、青年、スポーツ',
+    zh: 'AI，青年，体育',
   },
   mbti: {
     ko: 'MBTI',
@@ -202,10 +208,10 @@ export const translations: TranslationDictionary = {
     zh: '问候视频',
   },
   innoCardInquiry: {
-    ko: 'InnoCard\n문의',
-    en: 'InnoCard\nInquiry',
-    ja: 'InnoCard\nお問い合わせ',
-    zh: 'InnoCard\n咨询',
+    ko: '문의',
+    en: 'Inquiry',
+    ja: 'お問い合わせ',
+    zh: '咨询',
   },
   contactOptions: {
     ko: '연락하기',
@@ -298,16 +304,16 @@ export const translations: TranslationDictionary = {
     zh: '返回',
   },
   initialGreeting: {
-    ko: '안녕하세요! 저는 정이노입니다. 무엇을 도와드릴까요?',
-    en: 'Hello! I am Jeong Inno. How can I help you?',
-    ja: 'こんにちは！イノと申します。何かお手伝いできることはありますか？',
-    zh: '你好！我是Jeong Inno。我能为您做些什么？'
+    ko: '안녕하세요! 저는 최석재입니다. 무엇을 도와드릴까요?',
+    en: 'Hello! I am Seokjae Choi. How can I help you?',
+    ja: 'こんにちは！崔碩宰と申します。何かお手伝いできることはありますか？',
+    zh: '你好！我是崔硕宰。我能为您做些什么？'
   },
   cloneGreeting: {
-    ko: "안녕하세요! 저는 정이노's Clone입니다. 무엇을 도와드릴까요?",
-    en: "Hello! I'm Jeong Inno's Clone. How can I help you?",
-    ja: "こんにちは！イノのクローンです。どのようにお手伝いできますか？",
-    zh: "你好！我是Jeong Inno的克隆。我能为您做些什么？"
+    ko: "안녕하세요! 저는 최석재's Clone입니다. 무엇을 도와드릴까요?",
+    en: "Hello! I'm Seokjae Choi's Clone. How can I help you?",
+    ja: "こんにちは！崔碩宰のクローンです。どのようにお手伝いできますか？",
+    zh: "你好！我是崔硕宰的克隆。我能为您做些什么？"
   },
   formEmail: {
     ko: '이메일',
@@ -322,22 +328,28 @@ export const translations: TranslationDictionary = {
     zh: '请输入电子邮件',
   },
   greetingScript: {
-    ko: '',
-    en: '',
-    ja: '',
-    zh: ''
+    ko: '안녕하십니까, 최석재입니다.\n\n저는 현재 대전광역시서구체육회 이사, 사단법인 대한청년을세계로 사무국장, 그리고 INNOCURVE AI 에이전트로 활동하고 있습니다.\n\nAI와 청년, 그리고 스포츠의 미래를 움직이는 힘을 가치로 삼아, 기존의 한계를 넘어 변화와 혁신을 주도하는 것이 저의 목표입니다.\nAI 기술을 활용해 더 스마트한 세상을 만들고, 청년들과 함께 열정적으로 도전하며, 스포츠를 통해 강인한 정신과 문화를 형성하는 데 앞장서고 있습니다.\n\n변화는 곧 기회입니다.\n저는 AI를 통해 더 혁신적이고, 청년들과 함께 더 뜨겁게, 스포츠로 더 강인하게 나아가겠습니다.\n감사합니다.',
+    en: 'Nice to meet you, I am Seokjae Choi.\n\nI currently serve as a director of the Daejeon Seogu Sports Council, Secretary General of the Korean Youth to the World Association, and as an AI agent at INNOCURVE.\n\nMy goal is to drive change and innovation beyond existing limitations, valuing the power that moves the future of AI, youth, and sports.\nI am taking the lead in creating a smarter world through AI technology, passionately challenging with young people, and forming a strong spirit and culture through sports.\n\nChange is opportunity.\nI will move forward more innovatively through AI, more passionately with young people, and more strongly through sports.\nThank you.',
+    ja: 'はじめまして、チェ・ソクジェと申します。\n\n私は現在、大田広域市西区体育会理事、社団法人大韓青年を世界へ事務局長、そしてINNOCURVE AIエージェントとして活動しております。\n\nAIと青年、そしてスポーツの未来を動かす力を価値として、既存の限界を超えて変化とイノベーションを主導することが私の目標です。\nAI技術を活用してよりスマートな世界を作り、青年たちと共に情熱的に挑戦し、スポーツを通じて強靭な精神と文化を形成することに先頭に立っています。\n\n変化はすなわちチャンスです。\n私はAIを通じてよりイノベーティブに、青年たちと共により熱く、スポーツでより力強く前進して参ります。\nありがとうございます。',
+    zh: '您好，我是崔锡宰。\n\n我目前担任大田广域市西区体育会理事、社团法人韩国青年走向世界秘书长，以及INNOCURVE AI代理人。\n\n以推动AI、青年和体育未来的力量为价值，突破现有限制引领变革与创新是我的目标。\n我正在通过AI技术打造更智能的世界，与年轻人一起充满激情地挑战，并通过体育运动塑造坚韧的精神和文化。\n\n变化就是机遇。\n我将通过AI变得更具创新性，与年轻人一起更加热情，通过体育运动变得更加强大。\n谢谢。'
   },
-  affiliations_worldyouth: {
+  affiliations_1: {
+    ko: '대전광역시 서구체육회',
+    en: 'Seo-gu Sports Council of Daejeon',
+    ja: '大田廣域市 西區體育會',
+    zh: '大田廣域市 西區體育會'
+  },
+  affiliations_2: {
+    ko: '(사)대한청년을세계로',
+    en: 'Korea Youth to the World',
+    ja: '(社)大韓青年為世界',
+    zh: '(社)大韓青年為世界'
+  },
+  affiliations_3: {
     ko: '이노커브',
     en: 'InnoCurve',
     ja: 'イノカーブ',
     zh: 'InnoCurve'
-  },
-  affiliations_innocurve: {
-    ko: '추가 소속 기관',
-    en: 'Additional Affiliation',
-    ja: '追加所属',
-    zh: '附加隶属'
   }
 };
 

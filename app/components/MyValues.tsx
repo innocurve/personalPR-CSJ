@@ -14,34 +14,30 @@ const MyValues: React.FC<MyValuesProps> = ({ language }) => {
   const content = {
     ko: [
       translate('valuesDescription', language),
-      "이곳에 가치관이나 메시지를 작성하실 수 있습니다. 위에 작성한 비전 및 목표에 대한 내용을 자유롭게 입력하세요.",
-      "예시",
-      "특히 인공지능은 우리의 일상과 산업 전반에 걸쳐 커다란 변화를 이끌며 미래를 재정의하고 있습니다. 하지만 이러한 변화가 과연 모든 이에게 공평하게 다가가고 있는지, 그 과정을 되돌아볼 필요가 있습니다.",
-      "저희는 기술의 장벽을 낮추고, 누구나 인공지능을 통해 더 나은 삶을 누릴 수 있도록 돕는 데 최선을 다하고자 합니다. 교육과 소통을 통해 더 많은 사람들이 기술을 이해하고 활용할 수 있도록 지원하며, 모두가 함께 성장할 수 있는 포용적 환경을 만들어 나가겠습니다.",
+      "인공지능(AI)은 청년들에게 새로운 기회를 제공하며, 미래를 변화시키고 있습니다. 하지만 이러한 기술이 모든 청년에게 공평하게 다가가고 있는지 고민해볼 필요가 있습니다.",
+      "AI는 소수만이 누리는 특권이 아니라, 누구나 쉽게 배우고 활용할 수 있는 자원이 되어야 합니다. 기술의 장벽을 낮추고, 더 많은 청년이 AI를 통해 성장할 수 있어야 합니다.",
+      "기술은 더 나은 미래를 향한 다리이며, 청년은 그 미래의 주인공입니다. 그리고 그 여정에서 스포츠는 도전과 협력의 가치를 키우는 중요한 역할을 합니다.",
       "감사합니다."
     ],
     en: [
       translate('valuesDescription', language),
-      "You can write your values or message here. Feel free to enter content about the vision and goals written above.",
-      "Example",
-      "Particularly, artificial intelligence is leading major changes across our daily lives and industries, redefining our future. However, we need to look back and consider whether these changes are truly reaching everyone equally.",
-      "We are committed to lowering technological barriers and doing our best to help everyone enjoy a better life through artificial intelligence. Through education and communication, we will support more people in understanding and utilizing technology, creating an inclusive environment where everyone can grow together.",
+      "Artificial Intelligence (AI) is providing new opportunities for young people and transforming the future. However, we need to consider whether this technology is reaching all young people equally.",
+      "AI should not be a privilege enjoyed by only a few, but a resource that anyone can easily learn and utilize. We need to lower technological barriers so that more young people can grow through AI.",
+      "Technology is a bridge to a better future, and young people are the protagonists of that future. And in this journey, sports plays a crucial role in fostering the values of challenge and cooperation.",
       "Thank you."
     ],
     ja: [
       translate('valuesDescription', language),
-      "ここに価値観やメッセージを記入できます。上記に記載したビジョンや目標に関する内容を自由に入力してください。",
-      "例",
-      "特に人工知能は私たちの日常生活と産業全般にわたって大きな変化をもたらし、未来を再定義しています。しかし、これらの変化が本当にすべての人に平等に届いているのか、そのプロセスを振り返る必要があります。",
-      "私たちは技術の障壁を低くし、誰もが人工知能を通じてより良い生活を送れるよう支援することに最善を尽くします。教育とコミュニケーションを通じて、より多くの人々が技術を理解し活用できるよう支援し、皆が共に成長できる包括的な環境を作り上げていきます。",
+      "人工知能（AI）は若者に新しい機会を提供し、未来を変えています。しかし、この技術が全ての若者に公平に届いているかを考える必要があります。",
+      "AIは一部の人だけが享受する特権ではなく、誰もが簡単に学び、活用できるリソースでなければなりません。技術の壁を低くし、より多くの若者がAIを通じて成長できるようにする必要があります。",
+      "技術はより良い未来への架け橋であり、若者はその未来の主役です。そしてその過程で、スポーツは挑戦と協力の価値を育む重要な役割を果たします。",
       "ありがとうございます。"
     ],
     zh: [
       translate('valuesDescription', language),
-      "您可以在此填写您的价值观或信息。请自由输入上述愿景和目标相关的内容。",
-      "示例",
-      "特别是人工智能正在引领我们的日常生活和产业全领域的重大变革，重新定义我们的未来。然而，我们需要反思这些变化是否真正平等地惠及每个人。",
-      "我们致力于降低技术壁垒，尽最大努力帮助每个人通过人工智能获得更好的生活。通过教育和沟通，我们将支持更多人理解和利用技术，创造一个包容的环境，让每个人都能共同成长。",
+      "人工智能（AI）正在为年轻人提供新的机会，并正在改变未来。但是，我们需要思考这项技术是否正在公平地惠及所有年轻人。",
+      "AI不应该是少数人享有的特权，而应该成为人人都能轻松学习和运用的资源。我们需要降低技术门槛，让更多年轻人能够通过AI实现成长。",
+      "技术是通往更美好未来的桥梁，年轻人是这个未来的主角。在这个过程中，体育在培养挑战和合作价值观方面发挥着重要作用。",
       "谢谢。"
     ]
   }
@@ -51,18 +47,18 @@ const MyValues: React.FC<MyValuesProps> = ({ language }) => {
   return (
     <div className="flex flex-col gap-8">
       <div className="w-full">
-        <div className="mb-6 relative px-6 sm:px-8 md:px-10 py-4 sm:py-5 md:py-6 flex flex-col items-center">
-          <svg className="absolute top-0 left-0 w-5 sm:w-7 md:w-12 h-5 sm:h-7 md:h-12 text-gray-300 transform -translate-x-1/6 -translate-y-1/6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <div className="mb-6 relative px-10 py-6 flex flex-col items-center">
+          <svg className="absolute top-0 left-0 w-12 h-12 text-gray-300 transform -translate-x-1/6 -translate-y-1/6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
           </svg>
-          <h2 className="text-lg sm:text-2xl md:text-3xl relative z-10 text-center mb-4 sm:mb-5 md:mb-6">
+          <h2 className="text-2xl sm:text-3xl relative z-10 text-center mb-6">
             {translate('valuesDescription', language).split('\n').map((line: string, i: number) => (
-              <span key={i} className="block text-lg sm:text-xl md:text-4xl font-mono tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-500 whitespace-nowrap">
+              <span key={i} className="block text-2xl sm:text-4xl font-mono tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-500 whitespace-nowrap">
                 {line}
               </span>
             ))}
           </h2>
-          <svg className="absolute bottom-0 right-0 w-5 sm:w-7 md:w-12 h-5 sm:h-7 md:h-12 text-gray-300 transform translate-x-1/6 translate-y-1/6 rotate-180" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <svg className="absolute bottom-0 right-0 w-12 h-12 text-gray-300 transform translate-x-1/6 translate-y-1/6 rotate-180" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
           </svg>
         </div>

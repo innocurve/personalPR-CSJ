@@ -3,129 +3,156 @@
 import { useState, useMemo } from 'react'
 import SophisticatedButton from './SophisticatedButton'
 import { useLanguage } from '../hooks/useLanguage'
+import { translate } from '../utils/translations'
 
-type YearHistory = {
-  [key: string]: string[]
+type Certification = {
+  name: string;
+  organization: string;
 }
 
-type HistoryByLanguage = {
-  [key: string]: YearHistory
+type CertificationsByLanguage = {
+  [key: string]: Certification[];
 }
 
-export default function Career() {
+export default function Certifications() {
   const [isExpanded, setIsExpanded] = useState(false)
   const { language } = useLanguage()
 
-  const fullHistory: HistoryByLanguage = useMemo(() => ({
-    ko: {
-      "2025": [
-        "추가 예정"
-      ],
-      "2024": [
-        "추가 예정"
-      ],
-      "2023": [
-        "추가 예정"
-      ],
-      "2022": [
-        "추가 예정"
-      ],
-      "2021": [
-        "추가 예정"
-      ]
-    },
-    en: {
-      "2025": [
-        "추가 예정"
-      ],
-      "2024": [
-        "추가 예정"
-      ],
-      "2023": [
-        "추가 예정"
-      ],
-      "2022": [
-        "추가 예정"
-      ],
-      "2021": [
-        "추가 예정"
-      ]
-    },
-    ja: {
-      "2025": [
-        "추가 예정"
-      ],
-      "2024": [
-        "추가 예정"
-      ],
-      "2023": [
-        "추가 예정"
-      ],
-      "2022": [
-        "추가 예정"
-      ],
-      "2021": [
-        "추가 예정"
-      ]
-    },
-    zh: {
-      "2025": [
-        "추가 예정"
-      ],
-      "2024": [
-        "추가 예정"
-      ],
-      "2023": [
-        "추가 예정"
-      ],
-      "2022": [
-        "추가 예정"
-      ],
-      "2021": [
-        "추가 예정"
-      ]
-    }
+  const certifications: CertificationsByLanguage = useMemo(() => ({
+    ko: [
+      {
+        name: "생활스포츠지도사 야구",
+        organization: "국가자격증: 문화체육관광부"
+      },
+      {
+        name: "퍼스널체력육성지도사 1급",
+        organization: "한국스포츠지도사연구협회"
+      },
+      {
+        name: "체형관리지도사 1급",
+        organization: "한국스포츠지도사연구협회"
+      },
+      {
+        name: "AI활용전문가 1급",
+        organization: "주무부처: 과학기술정보통신부"
+      },
+      {
+        name: "인공지능(AI)전문가 1급",
+        organization: "주무부처: 과학기술정보통신부"
+      },
+      {
+        name: "챗GPT활용지도사 1급",
+        organization: "주무부처: 과학기술정보통신부"
+      }
+    ],
+    en: [
+      {
+        name: "Baseball Sports Instructor",
+        organization: "National Certification: Ministry of Culture, Sports and Tourism"
+      },
+      {
+        name: "Personal Fitness Training Instructor Level 1",
+        organization: "Korea Sports Instructor Research Association"
+      },
+      {
+        name: "Body Management Instructor Level 1",
+        organization: "Korea Sports Instructor Research Association"
+      },
+      {
+        name: "AI Utilization Expert Level 1",
+        organization: "Ministry of Science and ICT"
+      },
+      {
+        name: "Artificial Intelligence (AI) Expert Level 1",
+        organization: "Ministry of Science and ICT"
+      },
+      {
+        name: "ChatGPT Utilization Instructor Level 1",
+        organization: "Ministry of Science and ICT"
+      }
+    ],
+    ja: [
+      {
+        name: "生活スポーツ指導者 野球",
+        organization: "国家資格：文化体育観光部"
+      },
+      {
+        name: "パーソナルフィットネス育成指導者 1級",
+        organization: "韓国スポーツ指導者研究協会"
+      },
+      {
+        name: "体型管理指導者 1級",
+        organization: "韓国スポーツ指導者研究協会"
+      },
+      {
+        name: "AI活用専門家 1級",
+        organization: "主務部処：科学技術情報通信部"
+      },
+      {
+        name: "人工知能(AI)専門家 1級",
+        organization: "主務部処：科学技術情報通信部"
+      },
+      {
+        name: "ChatGPT活用指導者 1級",
+        organization: "主務部処：科学技術情報通信部"
+      }
+    ],
+    zh: [
+      {
+        name: "生活体育指导员 棒球",
+        organization: "国家资格：文化体育观光部"
+      },
+      {
+        name: "个人健身培训指导员 一级",
+        organization: "韩国体育指导员研究协会"
+      },
+      {
+        name: "体型管理指导员 一级",
+        organization: "韩国体育指导员研究协会"
+      },
+      {
+        name: "AI应用专家 一级",
+        organization: "主管部门：科学技术信息通信部"
+      },
+      {
+        name: "人工智能(AI)专家 一级",
+        organization: "主管部门：科学技术信息通信部"
+      },
+      {
+        name: "ChatGPT应用指导员 一级",
+        organization: "主管部门：科学技术信息通信部"
+      }
+    ]
   }), [])
 
-  const currentHistory = useMemo(() => {
-    return fullHistory[language] || fullHistory['ko']
-  }, [language, fullHistory])
+  const currentCertifications = useMemo(() => {
+    return certifications[language] || certifications['ko']
+  }, [language, certifications])
 
-  const years = useMemo(() => {
-    return Object.keys(currentHistory).sort((a, b) => parseInt(b) - parseInt(a))
-  }, [currentHistory])
-
-  const displayedYears = useMemo(() => {
-    return isExpanded ? years : years.filter(year => parseInt(year) >= 2024)
-  }, [isExpanded, years])
+  const displayedCertifications = useMemo(() => {
+    return isExpanded ? currentCertifications : currentCertifications.slice(0, 3)
+  }, [isExpanded, currentCertifications])
 
   return (
-    <section className="mb-4 px-4 md:px-6 lg:px-8" role="region" aria-label="경력 사항">
-      <div className="space-y-6">
-        {displayedYears.map((year, index) => (
+    <section className="mb-4 px-4 md:px-6 lg:px-8" role="region" aria-label="자격">
+      <h2 className="text-3xl font-bold text-center mb-8">
+        <span className="bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 bg-clip-text text-transparent">
+          {translate('sectionTitle', language)}
+        </span>
+      </h2>
+      <div className="space-y-4">
+        {displayedCertifications.map((cert, index) => (
           <div 
-            key={year} 
-            className={`pb-4 ${index !== displayedYears.length - 1 ? 'border-b border-gray-200' : ''}`}
+            key={index} 
+            className={`pb-4 ${index !== displayedCertifications.length - 1 ? 'border-b border-gray-200' : ''}`}
             role="article"
-            aria-labelledby={`year-${year}`}
           >
-            <h3 
-              id={`year-${year}`}
-              className="text-2xl md:text-3xl font-bold text-blue-600 mb-3"
-            >
-              {year}
+            <h3 className="text-xl font-semibold text-blue-600 mb-1">
+              {cert.name}
             </h3>
-            <ul className="space-y-2 text-sm md:text-base" role="list">
-              {currentHistory[year]?.map((item: string, index: number) => (
-                <li 
-                  key={index} 
-                  className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
-                  role="listitem"
-                >
-                  {item}
-                </li>
-              ))}
-            </ul>
+            <p className="text-gray-600 text-sm md:text-base">
+              {cert.organization}
+            </p>
           </div>
         ))}
       </div>
@@ -135,7 +162,7 @@ export default function Career() {
           onClick={() => setIsExpanded(!isExpanded)} 
           language={language}
           aria-expanded={isExpanded}
-          aria-controls="career-history"
+          aria-controls="certifications-list"
         />
       </div>
     </section>
