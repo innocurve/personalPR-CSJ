@@ -22,7 +22,7 @@ export default function Certifications() {
     ko: [
       {
         name: "생활스포츠지도사 야구",
-        organization: "국가자격증: 문화체육관광부"
+        organization: "국가전문자격증: 문화체육관광부"
       },
       {
         name: "퍼스널체력육성지도사 1급",
