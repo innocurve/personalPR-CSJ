@@ -33,6 +33,10 @@ export default function Certifications() {
         organization: "한국스포츠지도사연구협회"
       },
       {
+        name: "AI-POT[AI프롬프트활용능력]",
+        organization: "KPC 한국생산성본부"
+      },
+      {
         name: "AI활용전문가 1급",
         organization: "주무부처: 과학기술정보통신부"
       },
@@ -57,6 +61,10 @@ export default function Certifications() {
       {
         name: "Body Management Instructor Level 1",
         organization: "Korea Sports Instructor Research Association"
+      },
+      {
+        name: "AI-POT[AI Prompt Utilization]",
+        organization: "KPC Korea Productivity Center"
       },
       {
         name: "AI Utilization Expert Level 1",
@@ -85,6 +93,10 @@ export default function Certifications() {
         organization: "韓国スポーツ指導者研究協会"
       },
       {
+        name: "AI-POT[AIプロンプト利用能力]",
+        organization: "KPC 韓国生産性本部"
+      },
+      {
         name: "AI活用専門家 1級",
         organization: "主務部処：科学技術情報通信部"
       },
@@ -109,6 +121,10 @@ export default function Certifications() {
       {
         name: "体型管理指导员 一级",
         organization: "韩国体育指导员研究协会"
+      },
+      {
+        name: "AI-POT[AIプロンプト利用能力]",
+        organization: "KPC 韓国生産性本部"
       },
       {
         name: "AI应用专家 一级",
